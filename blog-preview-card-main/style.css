@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Figtree', sans-serif;
+    font-size: 12px;
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    background-color: var(--White);
+    border-radius: 20px;
+    border: 1.5px solid var(--Black);
+    box-shadow: 8px 8px;
+    padding-bottom: 12px;
+}
+
+.card {
+    padding: 20px;
+}
+
+.article {
+    border-radius: 12px;
+}
+
+.learning {
+    background-color: var(--Yellow);
+    border-radius: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    padding: 6px 2px;
+    width: 65px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.date {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.info {
+    font-weight: 600;
+    color: var(--Grey);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 12%;
+    margin-right: 12px;
+}
+
+.name {
+    font-weight: 800;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
