@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Cream);
+    color: var(--Very-dark-blue);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+}
+
+.card {
+    background-color: var(--White);
+    border-radius: 10px ;
+    display: flex;
+}
+
+.product {
+    width: 250px;
+    border-radius: 10px 0 0 10px;
+}
+
+.content {
+    padding: 24px;
+}
+
+.title {
+    color: var(--Dark-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+h1,.discounted {
+    font-family: 'Fraunces', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.description {
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.discounted {
+    font-size: 2em;
+    color: var(--Dark-cyan);
+    padding-right: 12px;
+}
+
+s {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.cart {
+    padding-right: 5px;
+    height: 35%;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--White);
+    cursor: pointer;
+    background-color: var(--Dark-cyan);
+    border: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 17%);
+}
