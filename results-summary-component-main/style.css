@@ -140,19 +140,7 @@ img {
     align-items: center;
 }
 
-.visual span {
-    width: 90px;
-}
-
-.reaction span {
-    width: 90px;
-}
-
-.memory span {
-    width: 90px;
-}
-
-.verbal span {
+span {
     width: 90px;
 }
 
