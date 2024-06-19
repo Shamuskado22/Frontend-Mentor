@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /* ### Primary */
+
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* ### Neutral */
+
+    --VerydarkblueBG: hsl(217, 54%, 11%);
+    --VerydarkblueCard: hsl(216, 50%, 16%);
+    --VerydarkblueLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--VerydarkblueBG);
+    color: var(--White);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    background-color: var(--VerydarkblueCard);
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.img {
+    position: relative;
+}
+
+.mainimg{
+    width: 100%;
+    border-radius: 12px;
+}
+
+h3 {
+    width: 175px;
+    font-weight: 600;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.text {
+    color: var(--Softblue);
+    padding-bottom: 20px;
+    font-size: 18px;
+    margin-left: 0;
+}
+
+.icon {
+    display: flex;
+    padding-bottom: 20px;
+    height: 20px;
+    border-bottom: 1px solid var(--VerydarkblueLine);
+}
+
+h4 {
+    color: var(--Cyan);
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 5px;
+    width: 190px;
+    height: 100%;
+}
+
+p {
+    color: var(--Softblue);
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.avatar {
+    width: 30px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+span {
+    color: var(--White);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.hover:hover {
+    color: var(--Cyan);
+}
+
+.img div {
+    position: absolute;
+    top: 0;
+    height: 300px;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%, 30%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 12px;
+}
+
+.img div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img div:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 12px;
+}
