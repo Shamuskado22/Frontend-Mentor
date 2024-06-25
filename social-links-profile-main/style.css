@@ -85,5 +85,5 @@ h2 {
 }
 
 .button:hover {
-    background-color: rgb(163, 163, 163);
+    background-color: var(--Green);
 }
