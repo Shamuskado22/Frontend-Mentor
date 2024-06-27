@@ -77,9 +77,9 @@ h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: var(--White);
-    border-radius: 12px;
+    border-radius: 10px;
     border: 0;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
     background-color: var(--Grey);
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
