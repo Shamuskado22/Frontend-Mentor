@@ -64,7 +64,8 @@ aside div.comment {
 }
 
 div.comment div.user {
-    display: flex;
+    background-color: darkblue;
+    
 }
 
 div.comment div.user img {
