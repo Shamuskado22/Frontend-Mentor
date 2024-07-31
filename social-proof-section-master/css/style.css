@@ -44,6 +44,10 @@ article p {
     margin-bottom: 40px;
 }
 
+div.rating {
+    margin-bottom: 40px;
+}
+
 div.stars {
     background-color: var(--Light-Grayish-Magenta);
     color: var(--Very-Dark-Magenta);
@@ -64,8 +68,8 @@ aside div.comment {
 }
 
 div.comment div.user {
-    background-color: darkblue;
-    
+    display: flex;
+    margin-bottom: 24px;
 }
 
 div.comment div.user img {
@@ -73,10 +77,37 @@ div.comment div.user img {
     border-radius: 50%;
 }
 
-div.comment h2 {
+div.userinfo {
+    margin-left: 16px;
+    
+}
+
+div.userinfo h2 {
     font-size: 1.1em;
 }
 
-div.comment .buyer {
+div.userinfo .buyer {
     font-size: 1.1em;
+    color: var(--Soft-Pink);
+}
+
+div.comment p {
+    line-height: 1.3em;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: var(--Very-Dark-Magenta);
+    color: var(--White);
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--Soft-Pink);
+}
+
+footer a:active {
+    color: var(--Dark-Grayish-Magenta);
 }
