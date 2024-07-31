@@ -1,0 +1,97 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-size: 40%, 80%;
+    }
+
+    main {
+        padding: 48px;
+    }
+
+    section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    article {
+        width: 300px;
+    }
+
+    article h1 {
+        text-align: left;
+        padding-left: 0;
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 3em;
+    }
+
+    article p {
+        text-align: left;
+        font-size: 1.1em;
+    }
+
+    div.rating {
+        font-size: 0.8em;
+        width: 450px;
+        align-self: center;
+        display: grid;
+    }
+
+    div.stars {
+        display: flex;
+        width: 360px;
+    }
+
+    div.stars:nth-child(2) {
+        justify-self: center;
+    }
+
+    div.stars:last-child {
+        justify-self: flex-end;
+    }
+
+    div.stars img {
+        padding: 0 4px;
+    }
+
+    div.stars img:nth-child(5) {
+        margin-right: 24px;
+    }
+
+    aside {
+        display: flex;
+    }
+
+    aside div.comment p {
+        font-size: 0.9em;
+        line-height: 1.4em;
+    }
+
+    aside div.comment:first-child {
+        align-self: flex-start;
+    }
+
+    aside div.comment:nth-child(2) {
+        align-self: center;
+        margin: 0 16px;
+    }
+
+    aside div.comment:last-child {
+        align-self: flex-end;
+        margin: 0 auto;
+    }
+
+    footer a:hover {
+        color: var(--Dark-Grayish-Magenta);
+        text-decoration: underline;
+    }
+}

@@ -100,13 +100,18 @@ div.comment p {
 footer {
     background-color: var(--Very-Dark-Magenta);
     color: var(--White);
+    padding: 4px;
     text-align: center;
     font-size: 0.9em;
+    position: absolute;
+    width: 100vw;
+    /* bottom: 0%; */
 }
 
 footer a {
     text-decoration: none;
     color: var(--Soft-Pink);
+    transition: 0.3s ease-in-out;
 }
 
 footer a:active {
