@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --Young: "Young Serif", serif;
+    --Outfit: "Outfit", sans-serif;
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--Outfit);
+}
+
+main {
+    padding: 32px;
+}
+
+section.img {
+    height: 172px;
+    background-color: black;
+    background-image: url(../assets/images/image-omelette.jpeg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: -32px -32px 32px -32px;
+}
+
+article h1 {
+    font-family: var(--Young);
+    font-size: 2em;
+    color: var(--Stone-900);
+    line-height: 1em;
+    padding-bottom: 32px;
+}
