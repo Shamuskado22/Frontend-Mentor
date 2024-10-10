@@ -103,9 +103,6 @@ footer {
     padding: 4px;
     text-align: center;
     font-size: 0.9em;
-    position: absolute;
-    width: 100vw;
-    bottom: 0%;
 }
 
 footer a {
