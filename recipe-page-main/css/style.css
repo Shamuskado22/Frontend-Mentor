@@ -1,47 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
 
 :root {
-    --Young: "Young Serif", serif;
-    --Outfit: "Outfit", sans-serif;
-    --White: hsl(0, 0%, 100%);
-    --Stone-100: hsl(30, 54%, 90%);
-    --Stone-150: hsl(30, 18%, 87%);
-    --Stone-600: hsl(30, 10%, 34%);
-    --Stone-900: hsl(24, 5%, 18%);
-    --Brown-800: hsl(14, 45%, 36%);
-    --Rose-800: hsl(332, 51%, 32%);
-    --Rose-50: hsl(330, 100%, 98%);
+  --Young: "Young Serif", serif;
+  --Outfit: "Outfit", sans-serif;
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 16px;
-    font-family: var(--Outfit);
+  font-size: 0.85em;
+  font-family: var(--Outfit);
+  color: var(--Stone-600);
+}
+
+header.img {
+  height: 150px;
+  background: black url(../assets/images/image-omelette.jpeg) center/cover;
 }
 
 main {
-    padding: 32px;
-}
-
-section.img {
-    height: 172px;
-    background-color: black;
-    background-image: url(../assets/images/image-omelette.jpeg);
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: -32px -32px 32px -32px;
+  padding: 32px;
+  /* background-color: black; */
 }
 
 article h1 {
-    font-family: var(--Young);
-    font-size: 2em;
-    color: var(--Stone-900);
-    line-height: 1em;
-    padding-bottom: 32px;
+  font-family: var(--Young);
+  font-size: 2.5em;
+  font-weight: 550;
+  color: var(--Stone-900);
+  line-height: 1.2em;
+  margin-bottom: 24px;
+}
+
+article p {
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+section.prep {
+  background-color: var(--Rose-50);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.prep h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--Rose-800);
+  margin-bottom: 12px;
+}
+
+.prep ul {
+  list-style-position: inside;
+}
+
+.prep li {
+  margin-bottom: 8px;
+  display: list-item;
+  /* width: 150px; */
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.prep li::marker {
+  color: var(--Rose-800);
+  font-size: 0.9em;
+}
+
+span {
+  font-weight: 600;
+}
+
+article h2,
+aside h2 {
+  font-family: var(--Young);
+  font-weight: 550;
+  color: var(--Brown-800);
+  margin-bottom: 12px;
+}
+
+article > ul,
+article > ol {
+  list-style-position: inside;
+  border-bottom: 1px solid var(--Stone-150);
+  padding-bottom: 24px;
+  padding-left: 0;
+  margin-bottom: 24px;
+  counter-reset: item;
+}
+
+article > ul li,
+article > ol li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 1.5em;
+  counter-increment: item;
+  list-style: none;
+}
+
+article > ol li::before {
+  content: counter(item) ". ";
+}
+
+article > ul li::before {
+  content: "• ";
+  font-size: 1.5em;
+}
+
+article > ul li::before,
+article > ol li::before {
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+  color: var(--Brown-800);
+}
+
+article > ul li::after,
+article > ol li::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+}
+
+article > ul li::marker,
+article > ol li::marker {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--Brown-800);
+}
+
+aside p {
+  margin-bottom: 24px;
+  padding: 8px;
+  border-bottom: 1px solid var(--Stone-150);
+}
+
+aside p span {
+    margin: ;
+}
+
+aside tr td:last-child {
+  color: var(--Brown-800);
+  font-weight: 600;
 }
