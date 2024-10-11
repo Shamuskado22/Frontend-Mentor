@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+  body {
+    background-color: var(--Stone-100);
+  }
+
+  header {
+    padding: 32px;
+    width: 70vw;
+    margin: 32px auto 0;
+    border-radius: 12px 12px 0 0;
+  }
+
+  header .img {
+    height: 200px;
+    border-radius: 8px;
+  }
+
+  main {
+    width: 70vw;
+    padding: 0 32px 32px;
+    margin: 0 auto 24px;
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header,
+  main {
+    width: 50vw;
+  }
+}

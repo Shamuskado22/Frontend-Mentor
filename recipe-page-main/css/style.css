@@ -25,14 +25,18 @@ body {
   color: var(--Stone-600);
 }
 
-header.img {
+header {
+  background-color: var(--White);
+}
+
+header .img {
   height: 150px;
   background: black url(../assets/images/image-omelette.jpeg) center/cover;
 }
 
 main {
+  background-color: var(--White);
   padding: 32px;
-  /* background-color: black; */
 }
 
 article h1 {
@@ -146,15 +150,37 @@ article > ol li::marker {
 
 aside p {
   margin-bottom: 24px;
-  padding: 8px;
-  border-bottom: 1px solid var(--Stone-150);
 }
 
-aside p span {
-    margin: ;
+aside table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+aside tr {
+  text-align: left;
+  padding: 8px;
+}
+
+aside tr td {
+  border-bottom: 1px solid var(--Stone-150);
+  padding: 12px 24px;
 }
 
 aside tr td:last-child {
   color: var(--Brown-800);
   font-weight: 600;
+}
+
+footer {
+  background-color: var(--Rose-800);
+  color: var(--White);
+  padding: 4px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: black;
+  margin-right: 4px;
 }
