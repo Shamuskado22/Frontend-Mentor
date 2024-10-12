@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+
+  --White: hsl(0, 0%, 100%);
+
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  background-color: var(--Grey-900);
+  color: var(--White);
+}
+
+main {
+  background-color: var(--Grey-800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 318px;
+  margin: 64px auto;
+  padding: 24px 24px 12px;
+  border-radius: 12px;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+  background: var(--Grey-700) url(../assets/images/avatar-jessica.jpeg) center/contain;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+main h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+main h2 {
+  font-size: 0.9em;
+  color: var(--Green);
+  margin-bottom: 24px;
+}
+
+main p {
+  font-size: 0.9em;
+  margin-bottom: 16px;
+}
+
+main ul {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+li a {
+  background-color: var(--Grey-700);
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--White);
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out ;
+}
+
+li a:active {
+  background-color: var(--Green);
+  color: var(--Grey-800);
+}
+
+footer {
+  background-color: var(--Grey-800);
+  text-align: center;
+  padding: 8px;
+  font-size: 0.8em;
+}
+
+footer a {
+  margin-right: 4px;
+  color: var(--Green);
+}

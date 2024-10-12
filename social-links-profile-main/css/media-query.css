@@ -1,0 +1,6 @@
+@media (min-width: 992px) {
+  li a:hover {
+  background-color: var(--Green);
+  color: var(--Grey-800);
+}
+}
