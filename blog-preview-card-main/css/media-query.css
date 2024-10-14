@@ -1,0 +1,39 @@
+@media (min-width: 992px) {
+  main {
+    width: 384px;
+  }
+
+  main .learning {
+    font-size: 0.9em;
+  }
+
+  main .published {
+    font-size: 0.88em;
+  }
+
+  main h1 {
+    font-size: 1.5em;
+  }
+
+  main h1 a:hover {
+    color: var(--Yellow);
+  }
+
+  main .info {
+    font-size: 1em;
+  }
+
+  .avatar span {
+    font-size: 0.9em;
+  }
+
+  footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  footer a:hover {
+    color: var(--Yellow);
+  }
+}

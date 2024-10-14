@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+
+  --White: hsl(0, 0%, 100%);
+
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Yellow);
+  color: var(--Gray-950);
+  font-size: 16px;
+  font-family: "Figtree", sans-serif;
+}
+
+main {
+  width: 318px;
+  background-color: var(--White);
+  border: 1px solid var(--Gray-950);
+  box-shadow: 8px 8px 0 var(--Gray-950);
+  border-radius: 16px;
+  margin: 24px auto;
+  padding: 24px;
+}
+
+main .img {
+  height: 201px;
+  border-radius: 12px;
+  background: var(--Yellow) url(../assets/images/illustration-article.svg) center/cover;
+  margin-bottom: 24px;
+}
+
+main .learning {
+  background-color: var(--Yellow);
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  font-size: 0.76em;
+  font-weight: 700;
+}
+
+main .published {
+  font-size: 0.77em;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+main h1 {
+  font-size: 1.24em;
+  margin-bottom: 24px;
+}
+
+main h1 a {
+  text-decoration: none;
+  color: var(--Gray-950);
+}
+
+main h1 a:active {
+  color: var(--Yellow);
+}
+
+main .info {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--Gray-500);
+  line-height: 1.5em;
+  margin-bottom: 24px;
+}
+
+main .avatar {
+  display: flex;
+}
+
+.avatar .avatarimg {
+  height: 30px;
+  margin-right: 8px;
+}
+
+.avatar span {
+  font-size: 0.85em;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+footer {
+  background-color: var(--White);
+  font-size: 0.8em;
+  text-align: center;
+  padding: 4px;
+  color: var(--Gray-950);
+}
+
+footer a {
+  color: var(--Gray-950);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:active {
+  color: var(--Yellow);
+}
