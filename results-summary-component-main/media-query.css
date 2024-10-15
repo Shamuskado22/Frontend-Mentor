@@ -1,0 +1,56 @@
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    width: 652px;
+    border-radius: 32px;
+    box-shadow: 10px 10px 10px var(--Pale-blue);
+  }
+
+  .result {
+    width: 50%;
+    border-radius: 32px;
+    padding: 20px 40px 28px;
+  }
+
+  .result h1 {
+    font-size: 1.3em;
+  }
+
+  .result h2 {
+    font-size: 1.5em;
+  }
+
+  .result p {
+    font-size: 1em;
+  }
+
+  .percent span {
+    font-size: 4.5em;
+  }
+
+  .summary {
+    width: 50%;
+  }
+
+  .summary button:hover {
+    background-image: linear-gradient(
+      to bottom,
+      var(--Light-slate-blue-background),
+      var(--Light-royal-blue-background)
+    );
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
