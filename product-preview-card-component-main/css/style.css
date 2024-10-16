@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Dark-cyan-hover: hsl(158, 36%, 20%);
+
+  --Cream: hsl(30, 38%, 92%);
+
+  /* ### Neutral */
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Cream);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 100vh;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  border-radius: 10px 10px 0 0;
+}
+
+header .img {
+  height: 240px;
+  background: var(--Cream) url(../images/image-product-mobile.jpg) center/cover;
+  border-radius: 10px 10px 0 0;
+}
+
+header,
+main {
+  width: 345px;
+  background-color: var(--White);
+  margin: auto;
+}
+
+main {
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 0 0 10px 10px;
+}
+
+main #type {
+  text-transform: uppercase;
+  color: var(--Dark-grayish-blue);
+  letter-spacing: 5px;
+  font-size: 0.8em;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+main h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2.3em;
+  color: var(--Very-dark-blue);
+  line-height: 31px;
+  margin-bottom: 24px;
+}
+
+main p {
+  font-size: 1.02em;
+  color: var(--Dark-grayish-blue);
+  line-height: 23px;
+  margin-bottom: 24px;
+}
+
+main .price {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.price #discount {
+  font-family: "Fraunces", serif;
+  font-size: 2.3em;
+  font-weight: 700;
+  color: var(--Dark-cyan);
+  margin-right: 12px;
+}
+
+.price #full {
+  align-self: center;
+  color: var(--Dark-grayish-blue);
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.02em;
+  border: none;
+  background-color: var(--Dark-cyan);
+  color: var(--White);
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:active {
+  background-color: var(--Dark-cyan-hover);
+}
+
+button img {
+  margin-right: 8px;
+}
+
+footer {
+  background-color: var(--White);
+  color: var(--Dark-grayish-blue);
+  text-align: center;
+  padding: 4px;
+}
+
+footer a {
+  color: var(--Dark-cyan-hover);
+}
