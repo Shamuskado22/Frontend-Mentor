@@ -29,17 +29,13 @@ body {
   font-size: 14px;
   font-weight: 500;
   height: 100vh;
-  /* display: flex; */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 header {
   border-radius: 10px 10px 0 0;
 }
 
-header .img {
+header .headerimg {
   height: 240px;
   background: var(--Cream) url(../images/image-product-mobile.jpg) center/cover;
   border-radius: 10px 10px 0 0;
@@ -84,7 +80,7 @@ main p {
 
 main .price {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .price #discount {

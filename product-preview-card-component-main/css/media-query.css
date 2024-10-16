@@ -1,0 +1,62 @@
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    display: none;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+  }
+
+  main .mainimg {
+    width: 50%;
+    background: var(--Cream) url(../images/image-product-desktop.jpg)
+      center/cover;
+    border-radius: 10px 0 0 10px;
+  }
+
+  main .info {
+    width: 50%;
+    padding: 24px;
+  }
+
+  main #type {
+    font-size: 1em;
+  }
+
+  main h1 {
+    font-size: 2.5em;
+    line-height: 35px;
+  }
+
+  main p {
+    font-size: 1.05em;
+  }
+
+  .price #full {
+    font-size: 1.1em;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  button:hover {
+    background-color: var(--Dark-cyan-hover);
+  }
+}
