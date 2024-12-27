@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Dark-purple: hsl(292, 42%, 14%);
+  --hover-active: hsl(281, 83%, 54%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  background: var(--Light-pink) url(../assets/images/background-pattern-mobile.svg) no-repeat fixed;
+  background-size: contain;
+}
+
+main {
+  width: 85vw;
+  padding: 2rem;
+  margin: 8rem auto 3rem;
+  border-radius: 0.6rem;
+  background-color: var(--White);
+}
+
+main .title {
+  display: flex;
+  margin-bottom: 0.5rem;
+  gap: 1.5rem;
+}
+
+.title img {
+  width: 1.5rem;
+}
+
+.title h1 {
+  color: var(--Dark-purple);
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--Light-pink);
+}
+
+section .question {
+  background-color: var(--White);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  user-select: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--Dark-purple);
+  z-index: 1;
+  cursor: pointer;
+  transition: color 0.2s ease-in;
+}
+
+section .question:active,
+section .question:hover {
+  color: var(--hover-active);
+}
+
+.plus {
+  animation: show-in 0.2s ease-in-out;
+}
+
+.minus {
+  display: none;
+  animation: show-in 0.2s ease-in-out;
+}
+
+section p {
+  display: none;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  letter-spacing: 0.01rem;
+  color: var(--Grayish-purple);
+  animation: slide-in 0.25s ease-in-out;
+}
+
+footer {
+  background-color: var(--hover-active);
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--White);
+}
+
+footer a {
+  color: var(--White);
+}
+
+.active {
+  display: block;
+}
+
+.deactive {
+  display: none;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes show-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
