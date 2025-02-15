@@ -25,6 +25,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--Font-Family);
+  font-size: var(--Font-size-paragraph);
 }
 
 body {
@@ -39,7 +40,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   height: 100vh;
 }
 
@@ -56,6 +57,66 @@ body {
   border-radius: 50%;
 }
 
+.rating-container .rating-heading,
+.thank-you-container .thank-you-heading {
+  font-size: 1.6rem;
+  color: var(--White);
+}
+
+.rating-container .rating-message,
+.thank-you-container .thank-you-message {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--Light-Grey);
+}
+
+.rating-container .rating-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-weight: var(--Font-Weight-bold);
+}
+
+.rating-options .rating-number {
+  background-color: var(--Dark-Blue-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rating-options .rating-number:hover {
+  background-color: var(--Orange);
+  color: var(--Very-Dark-Blue);
+}
+
+.rating-options .rating-number.active {
+  background-color: var(--White);
+  color: var(--Very-Dark-Blue);
+}
+
+.rating-container .submit-button {
+  background-color: var(--Orange);
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: var(--Font-Weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.8rem 1.5rem;
+  color: var(--Very-Dark-Blue);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rating-container .submit-button:hover {
+  background-color: var(--White);
+}
+
 .rating-container,
 .thank-you-container {
   background-color: var(--Dark-Blue);
@@ -67,8 +128,23 @@ body {
   border-radius: 10px;
 }
 
+.thank-you-container .thank-you-message {
+  text-align: center;
+}
+
 .thank-you-container {
   align-items: center;
+}
+
+.thank-you-container .selected-rating {
+  background-color: var(--Dark-Blue-2);
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--Orange);
 }
 
 .hidden {
