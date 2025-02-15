@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px) {
+
+  .rating-container,
+  .thank-you-container {
+    width: 370px;
+    padding: 2rem;
+    border-radius: 30px;
+  }
+
+  .thank-you-container {
+    padding: 3rem 1.8rem;
+  }
+}

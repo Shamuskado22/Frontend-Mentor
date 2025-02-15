@@ -59,7 +59,9 @@ body {
 
 .rating-container .rating-heading,
 .thank-you-container .thank-you-heading {
+  margin-top: 1.5rem;
   font-size: 1.6rem;
+  letter-spacing: 1px;
   color: var(--White);
 }
 
@@ -148,5 +150,24 @@ body {
 }
 
 .hidden {
-  /* display: none; */
+  display: none;
+}
+
+.attribution {
+  background-color: var(--Dark-Blue-2);
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  padding: 0.4rem;
+  color: var(--Light-Grey);
+}
+
+.attribution a {
+  color: var(--Orange);
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
 }
