@@ -1,0 +1,11 @@
+@media screen and (min-width: 500px) {
+  .card__container {
+    width: 350px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .card__image-container .card__image-view-icon-container {
+    width: 295px;
+    height: 295px;
+  }
+}
