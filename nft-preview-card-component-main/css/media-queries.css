@@ -1,3 +1,26 @@
+@media screen and (max-width: 320px) {
+  .card__container {
+    width: 300px;
+  }
+
+  .card__image-container .card__image-view-icon-container {
+    width: 244px;
+    height: 244px;
+  }
+
+}
+
+@media screen and (min-width: 425px) {
+  .card__container {
+    width: 325px;
+  }
+
+  .card__image-container .card__image-view-icon-container {
+    width: 268px;
+    height: 268px;
+  }
+}
+
 @media screen and (min-width: 500px) {
   .card__container {
     width: 350px;
@@ -5,7 +28,7 @@
   }
 
   .card__image-container .card__image-view-icon-container {
-    width: 295px;
-    height: 295px;
+    width: 296px;
+    height: 296px;
   }
 }

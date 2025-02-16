@@ -5,6 +5,7 @@
   /* ### Primary */
   --Soft-blue: hsl(215, 51%, 70%);
   --Cyan: hsl(178, 100%, 50%);
+  --Cyan-op: hsla(178, 100%, 50%, 0.3);
 
   /* ### Neutral  */
   --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
@@ -63,15 +64,15 @@
   border-radius: 0.6rem;
   z-index: 1;
   cursor: pointer;
-  transition: opacity 0.3s;
+  transition: z-index 0.3s;
 }
 
 .card__image-container .card__image:hover {
-  opacity: 0.3;
+  z-index: 0;
 }
 
 .card__image-container .card__image-view-icon-container {
-  background-color: var(--Cyan);
+  background-color: var(--Cyan-op);
   position: absolute;
   display: flex;
   align-items: center;
@@ -79,11 +80,18 @@
   border-radius: 0.6rem;
   width: 275px;
   height: 275px;
+  cursor: pointer;
+  transition: z-index 0.3s;
+}
+
+.card__image-container .card__image-view-icon-container:hover {
+  z-index: 1;
 }
 
 .card__container .card__title {
   font-weight: var(--Font-Weight-600);
   font-size: 1.25rem;
+  user-select: none;
   color: var(--White);
   cursor: pointer;
   transition: color 0.3s;
@@ -143,25 +151,27 @@
 .card__creator .card__creator-text {
   font-weight: var(--Font-Weight-300);
   font-size: 0.9rem;
+}
+
+
+.card__creator-text .card__creator-label {
+  font-size: inherit;
+  font-weight: inherit;
+  user-select: none;
   color: var(--White);
   cursor: pointer;
   transition: color 0.3s;
 }
 
-.card__creator .card__creator-text:hover {
+.card__creator .card__creator-label:hover {
   color: var(--Cyan);
-}
-
-.card__creator-text .card__creator-label {
-  font-size: inherit;
-  font-weight: inherit;
 }
 
 .attribution {
   background-color: var(--Very-dark-blue-line);
   width: 100%;
   padding: 0.5rem;
-  font-size: 11px;
+  font-size: 0.6rem;
   text-align: center;
   color: var(--Soft-blue);
 }
