@@ -8,8 +8,9 @@
   /* ### Neutral  */
   --White: hsl(0, 0%, 100%);
   --Light-Grey: hsl(217, 12%, 63%);
-  --Dark-Blue: hsl(213, 19%, 18%);
-  --Dark-Blue-2: hsl(213, 17%, 23%);
+  --Dark-Blue-lighter: hsl(213, 19%, 25%);
+  --Dark-Blue: hsl(213, 19%, 20%);
+  --Dark-Blue-darker: hsl(213, 19%, 12%);
   --Very-Dark-Blue: hsl(216, 12%, 8%);
 
   /* ## Typography  */
@@ -49,7 +50,7 @@ body {
 }
 
 .rating-container .star-icon-container {
-  background-color: var(--Dark-Blue-2);
+  background-color: var(--Dark-Blue-lighter);
   display: flex;
   justify-content: center;
   align-self: flex-start;
@@ -73,15 +74,15 @@ body {
 }
 
 .rating-container .rating-options {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
   font-weight: var(--Font-Weight-bold);
 }
 
 .rating-options .rating-number {
-  background-color: var(--Dark-Blue-2);
+  background-color: var(--Dark-Blue-lighter);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,6 +101,10 @@ body {
 .rating-options .rating-number.active {
   background-color: var(--White);
   color: var(--Very-Dark-Blue);
+}
+
+.rating-number [id^="rating"] {
+  margin-top: 0.3rem;
 }
 
 .rating-container .submit-button {
@@ -121,7 +126,9 @@ body {
 
 .rating-container,
 .thank-you-container {
-  background-color: var(--Dark-Blue);
+  background-image: linear-gradient(to bottom,
+      var(--Dark-Blue),
+      var(--Dark-Blue-darker) 70%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,7 +146,7 @@ body {
 }
 
 .thank-you-container .selected-rating {
-  background-color: var(--Dark-Blue-2);
+  background-color: var(--Dark-Blue-lighter);
   padding: 0.4rem 1rem;
   border-radius: 1rem;
   display: flex;
@@ -154,7 +161,7 @@ body {
 }
 
 .attribution {
-  background-color: var(--Dark-Blue-2);
+  background-color: var(--Dark-Blue-lighter);
   width: 100%;
   font-size: 11px;
   text-align: center;
