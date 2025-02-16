@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  /* ## Colors */
+  --White: hsl(0, 0%, 100%);
+  --Slate-300: hsl(212, 45%, 89%);
+  --Slate-500: hsl(216, 15%, 48%);
+  --Slate-900: hsl(218, 44%, 22%);
+
+  /* ## Typography  */
+  /* ### Body Copy */
+  --Font-size-paragraph: 15px;
+
+  /* ### Font */
+  --Font-Family: "Outfit", sans-serif;
+  --Font-weight-regular: 400;
+  --Font-weight-bold: 700;
+}
+
+/* ## Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--Font-Family);
+  font-size: var(--Font-size-paragraph);
+}
+
+body {
+  background-color: var(--Slate-300);
+  color: var(--Slate-900);
+}
+
+/* ## Container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 1.5rem;
+}
+
+/* ## QR Code */
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--White);
+  border-radius: 1rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.card__qr-code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.card__qr-code {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: var(--Font-weight-bold);
+  text-align: center;
+}
+
+.card__description {
+  font-size: 1.1rem;
+  font-weight: var(--Font-weight-regular);
+  text-align: center;
+  color: var(--Slate-500);
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.8rem;
+  color: var(--Slate-500);
+}
+
+.attribution a {
+  font-size: inherit;
+  text-decoration: none;
+  color: var(--Slate-900);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
