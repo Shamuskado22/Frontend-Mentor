@@ -1,0 +1,16 @@
+@media screen and (min-width: 380px) {
+  body {
+    background-size: contain;
+  }
+
+  .card {
+    max-width: 330px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: var(--Pale-blue) url('../images/pattern-background-desktop.svg') repeat-x;
+    background-size: contain;
+  }
+}
