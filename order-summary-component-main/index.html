@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>Frontend Mentor | Order summary card</title>
 
@@ -14,7 +15,7 @@
 
 <body>
 
-  <main>
+  <main class="container">
     <div class="card">
       <div class="card__image-container">
         <img class="card__image" src="./images/illustration-hero.svg" alt="hero image">
@@ -26,12 +27,19 @@
           device anywhere you like!
         </p>
         <div class="card__plan">
-          <span class="card__plan-type">Annual Plan</span>
-          <span class="card__plan-price">$59.99/year</span>
+          <div class="card__plan-details">
+            <img class="card__plan-icon" src="./images/icon-music.svg" alt="Music icon">
+            <div class="card__plan-info">
+              <span class="card__plan-type">Annual Plan</span>
+              <span class="card__plan-price">$59.99/year</span>
+            </div>
+          </div>
           <a href="#" class="card__plan-change">Change</a>
         </div>
-        <button class="card__button card__button--primary">Proceed to Payment</button>
-        <button class="card__button card__button--secondary">Cancel Order</button>
+        <div class="card__actions">
+          <button class="card__button card__button--primary">Proceed to Payment</button>
+          <button class="card__button card__button--secondary">Cancel Order</button>
+        </div>
       </div>
     </div>
   </main>
