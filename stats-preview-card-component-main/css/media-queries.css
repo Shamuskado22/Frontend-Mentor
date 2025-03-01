@@ -72,4 +72,8 @@
   .card .card__content {
     max-width: 980px;
   }
+
+  .card__text .card__description {
+    padding-right: 1.5rem;
+  }
 }
