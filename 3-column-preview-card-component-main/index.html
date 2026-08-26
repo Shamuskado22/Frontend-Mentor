@@ -1,12 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
     <link
       rel="icon"
@@ -15,47 +13,17 @@
       href="./images/favicon-32x32.png"
     />
 
-    <style type="text/tailwindcss">
-      @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap");
-      /* @import "tailwindcss"; */
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/input.css" />
 
-      :root {
-        /* ## Colors */
-
-        /* ### Primary */
-
-        --color-brightorange: hsl(31, 77%, 52%);
-        --color-dark-cyan: hsl(184, 100%, 22%);
-        --color-very-dark-cyan: hsl(179, 100%, 13%);
-
-        /* ### Neutral */
-
-        --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
-        --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
-
-        /* ## Typography */
-
-        /* ### Body Copy */
-
-        --Font-size: 15px;
-
-        /* ### Font */
-
-        --Family-1: "Lexend Deca", sans-serif;
-        --Weight-1: 400;
-
-        --Family-2: "Big Shoulders Display", cursive;
-        --Weight-2: 700;
-      }
-    </style>
+    <style type="text/tailwindcss"></style>
 
     <title>Frontend Mentor | 3-column preview card component</title>
   </head>
 
   <body class="">
-    <main class="">
-      <section class="">
+    <main class="bg-blue-50 h-full w-full flex flex-col md:flex-row">
+      <section class="bg-amber-500 h-25 w-25 flex justify-center items-center">
         <div class="">
           <img src="./images/icon-sedans.svg" alt="Sedans Icon" />
         </div>
