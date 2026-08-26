@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   background-color: var(--Grey-900);
   color: var(--White);
@@ -37,7 +37,8 @@ main {
 .img {
   height: 100px;
   width: 100px;
-  background: var(--Grey-700) url(../assets/images/avatar-jessica.jpeg) center/contain;
+  background: var(--Grey-700) url(../assets/images/avatar-jessica.jpeg)
+    center/contain;
   border-radius: 50%;
   margin-bottom: 24px;
 }
@@ -74,7 +75,9 @@ li a {
   margin-bottom: 12px;
   padding: 12px;
   border-radius: 8px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out ;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
 }
 
 li a:active {
